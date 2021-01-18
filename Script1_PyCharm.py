@@ -1,12 +1,12 @@
 import csv
 import json
 
-peopleCSV = open('C:/Users/alex8/Desktop/python/people.csv')
+peopleCSV = open('people.csv')
 reader3 = csv.reader(peopleCSV, delimiter=',')
 final_csv2 = list(reader3)
 region_list = []
 found = -1
-state_to_region = open('C:/Users/alex8/Desktop/python/state_to_region.json')
+state_to_region = open('state_to_region.json')
 state_data =  json.load(state_to_region)
 
 for x in range(len(final_csv2)):
